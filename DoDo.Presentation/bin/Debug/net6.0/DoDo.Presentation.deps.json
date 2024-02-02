@@ -28,12 +28,25 @@
         }
       },
       "System.Memory/4.5.5": {},
+      "DoDo.Data/1.0.0": {
+        "dependencies": {
+          "DoDo.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DoDo.Data.dll": {}
+        }
+      },
       "DoDo.Domain/1.0.0": {
         "runtime": {
           "DoDo.Domain.dll": {}
         }
       },
       "DoDo.Service/1.0.0": {
+        "dependencies": {
+          "DoDo.Data": "1.0.0",
+          "DoDo.Domain": "1.0.0",
+          "Spectre.Console": "0.48.0"
+        },
         "runtime": {
           "DoDo.Service.dll": {}
         }
@@ -59,6 +72,11 @@
       "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "path": "system.memory/4.5.5",
       "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    },
+    "DoDo.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DoDo.Domain/1.0.0": {
       "type": "project",

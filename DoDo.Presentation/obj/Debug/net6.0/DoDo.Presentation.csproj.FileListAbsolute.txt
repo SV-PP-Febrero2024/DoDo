@@ -19,3 +19,5 @@ C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Presentation\obj\Debug
 C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Presentation\obj\Debug\net6.0\DoDo.Presentation.pdb
 C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Presentation\obj\Debug\net6.0\DoDo.Presentation.genruntimeconfig.cache
 C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Presentation\obj\Debug\net6.0\ref\DoDo.Presentation.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Presentation\bin\Debug\net6.0\DoDo.Data.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Presentation\bin\Debug\net6.0\DoDo.Data.pdb

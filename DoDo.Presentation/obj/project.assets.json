@@ -27,6 +27,19 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "DoDo.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DoDo.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DoDo.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoDo.Data.dll": {}
+        }
+      },
       "DoDo.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -40,6 +53,11 @@
       "DoDo.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DoDo.Data": "1.0.0",
+          "DoDo.Domain": "1.0.0",
+          "Spectre.Console": "0.48.0"
+        },
         "compile": {
           "bin/placeholder/DoDo.Service.dll": {}
         },
@@ -92,6 +110,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DoDo.Data/1.0.0": {
+      "type": "project",
+      "path": "../DoDo.Data/DoDo.Data.csproj",
+      "msbuildProject": "../DoDo.Data/DoDo.Data.csproj"
     },
     "DoDo.Domain/1.0.0": {
       "type": "project",

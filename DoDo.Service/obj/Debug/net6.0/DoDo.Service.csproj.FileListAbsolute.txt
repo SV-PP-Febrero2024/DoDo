@@ -10,3 +10,8 @@ C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6
 C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\refint\DoDo.Service.dll
 C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.pdb
 C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\ref\DoDo.Service.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\bin\Debug\net6.0\DoDo.Data.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\bin\Debug\net6.0\DoDo.Domain.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\bin\Debug\net6.0\DoDo.Domain.pdb
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\bin\Debug\net6.0\DoDo.Data.pdb
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.csproj.CopyComplete

@@ -5,7 +5,7 @@ public class Task
     public string? Description { get; set; }
     public DateTime? CreationDate { get; set; }
     public bool Completed { get; set; } = false;
-    public int prioridad { get; set; } = 0;
+    public int Priority { get; set; } = 0;
     public int IdNumber { get; set; }
     private static int IdNumberSeed = 1111;
 

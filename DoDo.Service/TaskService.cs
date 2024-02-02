@@ -73,25 +73,70 @@ public class TaskService
         }
         Thread.Sleep(3000);
     }
-    public bool CheckExistingTaskData(string? title)
+    public void CompleteTask()
     {
-        existingTaskIndex = 0;
-        foreach (var book in taskData.TasksList)
-        {
-            if (book.Title == title)
-            {
-                return true;
-            }
-            existingTaskIndex++;
+        AnsiConsole.MarkupLine("[green]Completing a task[/]");
+        AnsiConsole.MarkupLine("");
+        int idTask = AnsiConsole.Ask<int>("Task ID to complete:");
+        if (CheckExistingTaskDataById(idTask))
+        { 
+            AnsiConsole.MarkupLine("[yellow]You completed the following task:[/]");
+            User user = userService.GetLoggedInUser();
+            Domain.Task task = taskData.TasksList.Find(x => x.IdNumber == idTask);
+            List<Domain.Task> tempList = new List<Domain.Task>{task};
+            CreateTasksTable(tempList);
+            AnsiConsole.Write(TasksTable);
+            task.Completed = true;
+        } else {
+            AnsiConsole.MarkupLine("[yellow]You don't have this task.[/]");
+            AnsiConsole.MarkupLine("[yellow]Check you are writing a valid ID.[/]");
         }
-        return false;
+        Thread.Sleep(5000);    
     }
+
+    public void DeleteTask()
+    {
+        // User user = userService.GetLoggedInUser();
+        // List<Domain.Task> listTasks = taskData.TasksList.FindAll(x => x.Owner.Email == user.Email);
+        AnsiConsole.MarkupLine("[green]Deleting a task[/]");
+        AnsiConsole.MarkupLine("");
+        int idTask = AnsiConsole.Ask<int>("Task ID to delete:");
+        if (CheckExistingTaskDataById(idTask))
+        { 
+            AnsiConsole.MarkupLine("[yellow]You deleted the following task:[/]");
+            User user = userService.GetLoggedInUser();
+            Domain.Task task = taskData.TasksList.Find(x => x.IdNumber == idTask);
+            List<Domain.Task> tempList = new List<Domain.Task>{task};
+            CreateTasksTable(tempList);
+            AnsiConsole.Write(TasksTable);
+            //taskData.DELETE TASK
+        } else {
+            AnsiConsole.MarkupLine("[yellow]You don't have this task.[/]");
+            AnsiConsole.MarkupLine("[yellow]Check you are writing a valid ID.[/]");
+        }
+        Thread.Sleep(5000);    
+    }
+        
+    // public bool CheckExistingTaskData(string? title)
+    // {
+    //     existingTaskIndex = 0;
+    //     foreach (var book in taskData.TasksList)
+    //     {
+    //         if (book.Title == title)
+    //         {
+    //             return true;
+    //         }
+    //         existingTaskIndex++;
+    //     }
+    //     return false;
+    // }
     public bool CheckExistingTaskDataById(int taskId)
     {
         existingTaskIndex = 0;
+        User user = userService.GetLoggedInUser();
         foreach (var task in taskData.TasksList)
         {
-            if (task.IdNumber == taskId)
+            if (task.IdNumber == taskId && task.Owner.Email == user.Email)
             {
                 return true;
             }
@@ -105,12 +150,13 @@ public class TaskService
         TasksTable.AddColumns("ID", "Title", "Description", "Creation Date", "Is Completed", "Priority Level");
         foreach (Domain.Task task in tasksList)
             {
-                TasksTable.AddRow(task.IdNumber.ToString(), task.Title, task.Description, task.CreationDate.ToString(), task.Completed.ToString(), task.Priority.ToString());
+                string creationDate = UserService.LoggedUser.RegistrationDate.ToString().Substring(0, UserService.LoggedUser.RegistrationDate.ToString().Length - 7);
+                TasksTable.AddRow(task.IdNumber.ToString(), task.Title, task.Description, creationDate, task.Completed.ToString(), task.Priority.ToString());
             }
     }
-    public List<Domain.Task> GetTasksList()
-    {
-        taskData.GetRegisteredTasks();
-        return taskData.TasksList;
-    }
+    // public List<Domain.Task> GetTasksList()
+    // {
+    //     taskData.GetRegisteredTasks();
+    //     return taskData.TasksList;
+    // }
 }

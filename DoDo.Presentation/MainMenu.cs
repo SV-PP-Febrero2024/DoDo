@@ -74,7 +74,7 @@ public class MainMenu
                 Thread.Sleep(2000);
                 break;
             case "- Sign Up":
-                
+                userService.SignUp();
                 break;
             case "- Task Examples":
                 AnsiConsole.MarkupLine("[yellow]TASK EXAMPLES[/]");

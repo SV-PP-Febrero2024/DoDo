@@ -15,7 +15,7 @@ public class UserService
         string password = AnsiConsole.Prompt(new TextPrompt<string>("Password:").Secret());
         if (CheckExistingUserData(email, password, true))
         {
-            AnsiConsole.MarkupLine("[yellow]You are logging in.[/]");
+            AnsiConsole.MarkupLine("[yellow]You are loging in.[/]");
             return true;
         }
         AnsiConsole.MarkupLine("[yellow]Invalid Email or Password.[/]");
@@ -65,11 +65,11 @@ public class UserService
         Regex regex = new Regex(emailPatron);
         return regex.IsMatch(email);
     }
-     public bool CheckExistingUserData(string? email, string? password, bool loggIn=false)
+     public bool CheckExistingUserData(string? email, string? password, bool login=false)
     {
         foreach (var user in userData.UsersList)
         {
-            if (loggIn)
+            if (login)
             {
                 if (user.Email == email && user.Password == password)
                 {

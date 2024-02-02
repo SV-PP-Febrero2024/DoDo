@@ -87,6 +87,22 @@ public class MainMenu
                 UserService.LoggedUser = new();
                 NumMenu = 1;
                 break;
+            case "- Search for tasks":
+                taskService.SearchForTasks();
+                break;
+            case "- Show current tasks":
+                taskService.ShowTasks(false);
+                break;
+            case "- Show completed tasks":
+                taskService.ShowTasks(true);
+                break;
+            case "- Create new task":
+                taskService.CreateTask();
+                break;
+            case "- Complete a task":
+                break;
+            case "- Delete a task":
+                break;
             case "<-Back to menu":
                 NumMenu = 2;
                 break;

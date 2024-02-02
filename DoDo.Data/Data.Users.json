@@ -5,5 +5,12 @@
       "Password": "a",
       "RegistrationDate": "2023-12-16T01:14:32.5976736+01:00",
       "IdNumber": 100
+    },
+    {
+      "Name": "Carlos",
+      "Email": "b",
+      "Password": "b",
+      "RegistrationDate": "2023-12-17T01:14:32.5976736+01:00",
+      "IdNumber": 101
     }
   ]

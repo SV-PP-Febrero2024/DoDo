@@ -1,10 +1,47 @@
 [
-    {
-      "Title": "Compra",
-      "Description": "Comprar huevos, tomates, pan y leche.",
-      "CreationDate": "2023-12-16T01:14:32.5976736+01:00",
-      "Completed": false,
-      "Priority": 0,
-      "IdNumber": 1111
-    }
-  ]
+  {
+    "Title": "compra",
+    "Description": "comprar huevos, tomates, pan y leche.",
+    "CreationDate": "2023-12-16T01:14:32.5976736+01:00",
+    "Completed": false,
+    "Priority": 0,
+    "Owner": {
+      "Name": "Ignacio",
+      "Email": "a",
+      "Password": "a",
+      "RegistrationDate": "2023-12-16T01:14:32.5976736+01:00",
+      "IdNumber": 100
+    },
+    "IdNumber": 1111
+  },
+  {
+    "Title": "limpiar",
+    "Description": "tengo que limpiar la casa.",
+    "CreationDate": "2024-02-01T01:14:32.5976736+01:00",
+    "Completed": true,
+    "Priority": 1,
+    "Owner": {
+      "Name": "Carlos",
+      "Email": "b",
+      "Password": "b",
+      "RegistrationDate": "2023-12-17T01:14:32.5976736+01:00",
+      "IdNumber": 101
+    },
+    "IdNumber": 1112
+  },
+  {
+    "Title": "reparar coche",
+    "Description": "tengo que llevar el coche al taller.",
+    "CreationDate": "2024-02-02T00:00:00+01:00",
+    "Completed": false,
+    "Priority": 2,
+    "Owner": {
+      "Name": "Ignacio",
+      "Email": "a",
+      "Password": "a",
+      "RegistrationDate": "2023-12-16T01:14:32.5976736+01:00",
+      "IdNumber": 100
+    },
+    "IdNumber": 1113
+  }
+]

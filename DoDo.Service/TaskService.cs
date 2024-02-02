@@ -14,9 +14,10 @@ public class TaskService
     {
         AnsiConsole.MarkupLine("[green]Searching for tasks[/]");
         AnsiConsole.MarkupLine("");
-        string searchText = AnsiConsole.Ask<String>("Write a Task title:").ToLower();
+        string searchText = AnsiConsole.Ask<string>("Write a Task title:").ToLower();
         AnsiConsole.WriteLine("");
-        List<Domain.Task> findedTasks = taskData.TasksList.FindAll(x => x.Title.Contains(searchText));
+        User user = userService.GetLoggedInUser();
+        List<Domain.Task> findedTasks = taskData.TasksList.FindAll(x => x.Title.Contains(searchText) && x.Owner.Email == user.Email);
         if (findedTasks.Count != 0)
         {
             CreateTasksTable(findedTasks);
@@ -29,7 +30,8 @@ public class TaskService
     }
     public void ShowTasks(bool isCompleted)
     {
-        List<Domain.Task> listTasks = taskData.TasksList.FindAll(x => x.Completed == isCompleted);
+        User user = userService.GetLoggedInUser();
+        List<Domain.Task> listTasks = taskData.TasksList.FindAll(x => x.Completed == isCompleted && x.Owner.Email == user.Email);
         if (listTasks.Count != 0)
         {
             AnsiConsole.MarkupLine("[green]Your current tasks[/]");

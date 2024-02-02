@@ -77,11 +77,11 @@ public class MainMenu
     public void ShowLogo()
     {
         AnsiConsole.Write(
-        new FigletText("BookyBook")
+        new FigletText("DoDo")
             .LeftJustified()
-            .Color(Color.Red));
-        AnsiConsole.MarkupLine("[red] _____________________________________________________________________[/]");
-        AnsiConsole.MarkupLine("[red] _____________________________________________________________________[/]");
+            .Color(Color.Purple));
+        AnsiConsole.MarkupLine("[purple] ______________________________[/]");
+        AnsiConsole.MarkupLine("[purple] ______________________________[/]");
         AnsiConsole.MarkupLine("");
     }
 }

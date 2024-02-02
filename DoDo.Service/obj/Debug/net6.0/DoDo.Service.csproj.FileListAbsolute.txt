@@ -1,0 +1,12 @@
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\bin\Debug\net6.0\DoDo.Service.deps.json
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\bin\Debug\net6.0\DoDo.Service.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\bin\Debug\net6.0\DoDo.Service.pdb
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.csproj.AssemblyReference.cache
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.AssemblyInfoInputs.cache
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.AssemblyInfo.cs
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.csproj.CoreCompileInputs.cache
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\refint\DoDo.Service.dll
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\DoDo.Service.pdb
+C:\Users\S2-PC00\Desktop\PP1-DesarrolloServidor\DoDo\DoDo.Service\obj\Debug\net6.0\ref\DoDo.Service.dll

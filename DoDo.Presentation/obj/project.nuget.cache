@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4N7Wr4WpI6S+2YNvJlK0MfC2Gi2WrDICWCQNUxUAZZJgy/ls3RIaOBBlWsoqwfQNe7T1iYRseEYl2cQ1yc/dEg==",
+  "dgSpecHash": "MySHn8Kf4RpWYsQpz4m6cXhd+FW56L84EzlX+W/sbu4K5lGALkzFDCShcjhD/bBAKKOo76E7ZXYfgrcbpKBO3Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\S2-PC00\\Desktop\\PP1-DesarrolloServidor\\DoDo\\DoDo.Presentation\\DoDo.Presentation.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
   "logs": []
 }

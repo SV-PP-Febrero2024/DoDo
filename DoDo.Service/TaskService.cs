@@ -40,7 +40,12 @@ public class TaskService
             AnsiConsole.Write(TasksTable);
             AnsiConsole.Prompt(new SelectionPrompt<string>().AddChoices("<-Back to menu"));
         } else {
-            AnsiConsole.MarkupLine("[yellow]You don't have any active task yet, sorry :([/]");
+            if (isCompleted)
+            {
+                AnsiConsole.MarkupLine("[yellow]You don't have any completed task yet, sorry :([/]");
+            } else {
+                AnsiConsole.MarkupLine("[yellow]You don't have any active task yet, sorry :([/]");
+            }
             Thread.Sleep(2000);
         }
     }
@@ -109,7 +114,8 @@ public class TaskService
             List<Domain.Task> tempList = new List<Domain.Task>{task};
             CreateTasksTable(tempList);
             AnsiConsole.Write(TasksTable);
-            //taskData.DELETE TASK
+            taskData.TasksList.Remove(task);
+            taskData.SaveTaskData();
         } else {
             AnsiConsole.MarkupLine("[yellow]You don't have this task.[/]");
             AnsiConsole.MarkupLine("[yellow]Check you are writing a valid ID.[/]");
@@ -117,19 +123,6 @@ public class TaskService
         Thread.Sleep(5000);    
     }
         
-    // public bool CheckExistingTaskData(string? title)
-    // {
-    //     existingTaskIndex = 0;
-    //     foreach (var book in taskData.TasksList)
-    //     {
-    //         if (book.Title == title)
-    //         {
-    //             return true;
-    //         }
-    //         existingTaskIndex++;
-    //     }
-    //     return false;
-    // }
     public bool CheckExistingTaskDataById(int taskId)
     {
         existingTaskIndex = 0;
@@ -154,9 +147,4 @@ public class TaskService
                 TasksTable.AddRow(task.IdNumber.ToString(), task.Title, task.Description, creationDate, task.Completed.ToString(), task.Priority.ToString());
             }
     }
-    // public List<Domain.Task> GetTasksList()
-    // {
-    //     taskData.GetRegisteredTasks();
-    //     return taskData.TasksList;
-    // }
 }

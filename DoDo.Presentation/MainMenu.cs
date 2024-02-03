@@ -16,7 +16,6 @@ public class MainMenu
         .PageSize(10)
         .AddChoices("- Log in")
         .AddChoices("- Sign Up")
-        .AddChoices("- Task Examples")
         .AddChoices("- Exit");
     private readonly SelectionPrompt<string> LoggedInPrompt = new SelectionPrompt<string>()
         .PageSize(10)
@@ -100,8 +99,10 @@ public class MainMenu
                 taskService.CreateTask();
                 break;
             case "- Complete a task":
+                taskService.CompleteTask();
                 break;
             case "- Delete a task":
+                taskService.DeleteTask();
                 break;
             case "<-Back to menu":
                 NumMenu = 2;

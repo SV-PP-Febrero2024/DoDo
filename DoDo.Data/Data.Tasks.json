@@ -43,20 +43,5 @@
       "IdNumber": 100
     },
     "IdNumber": 1113
-  },
-  {
-    "Title": "comer",
-    "Description": "quiero comer",
-    "CreationDate": "2024-02-02T00:00:00+01:00",
-    "Completed": false,
-    "Priority": 5,
-    "Owner": {
-      "Name": "Ignacio",
-      "Email": "a",
-      "Password": "a",
-      "RegistrationDate": "2023-12-16T01:14:32.5976736+01:00",
-      "IdNumber": 100
-    },
-    "IdNumber": 1114
   }
 ]

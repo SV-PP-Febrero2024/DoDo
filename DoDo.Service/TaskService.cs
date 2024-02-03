@@ -9,7 +9,6 @@ public class TaskService
     public readonly TaskData taskData = new();
     public readonly UserService userService = new();
     public Table TasksTable = new();
-    private int existingTaskIndex;
     public void SearchForTasks()
     {
         AnsiConsole.MarkupLine("[green]Searching for tasks[/]");
@@ -101,8 +100,6 @@ public class TaskService
 
     public void DeleteTask()
     {
-        // User user = userService.GetLoggedInUser();
-        // List<Domain.Task> listTasks = taskData.TasksList.FindAll(x => x.Owner.Email == user.Email);
         AnsiConsole.MarkupLine("[green]Deleting a task[/]");
         AnsiConsole.MarkupLine("");
         int idTask = AnsiConsole.Ask<int>("Task ID to delete:");
@@ -125,7 +122,6 @@ public class TaskService
         
     public bool CheckExistingTaskDataById(int taskId)
     {
-        existingTaskIndex = 0;
         User user = userService.GetLoggedInUser();
         foreach (var task in taskData.TasksList)
         {
@@ -133,7 +129,6 @@ public class TaskService
             {
                 return true;
             }
-            existingTaskIndex++;
         }
         return false;
     }
@@ -143,8 +138,15 @@ public class TaskService
         TasksTable.AddColumns("ID", "Title", "Description", "Creation Date", "Is Completed", "Priority Level");
         foreach (Domain.Task task in tasksList)
             {
+            string complete;
+            if (task.Completed)
+                {
+                    complete = "Yes";
+                } else {
+                    complete = "No";
+                }
                 string creationDate = UserService.LoggedUser.RegistrationDate.ToString().Substring(0, UserService.LoggedUser.RegistrationDate.ToString().Length - 7);
-                TasksTable.AddRow(task.IdNumber.ToString(), task.Title, task.Description, creationDate, task.Completed.ToString(), task.Priority.ToString());
+                TasksTable.AddRow(task.IdNumber.ToString(), task.Title, task.Description, creationDate, complete, task.Priority.ToString());
             }
     }
 }

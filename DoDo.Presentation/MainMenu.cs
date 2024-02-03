@@ -9,6 +9,7 @@ public class MainMenu
     public bool Exit = false;
     public readonly UserService userService = new();
     public readonly TaskService taskService = new();
+    public readonly string machineName = Environment.GetEnvironmentVariable("MACHINE_NAME");
     private string? Option;
     private int NumMenu = 1;
     private readonly SelectionPrompt<string> MainPrompt = new SelectionPrompt<string>()
@@ -37,6 +38,7 @@ public class MainMenu
     {
         AnsiConsole.Clear();
         ShowLogo();
+        AnsiConsole.MarkupLine($"[grey]Name of this System/Computer: {machineName ?? "Undefined"}[/]");
         AnsiConsole.MarkupLine("");
 
         switch (NumMenu)

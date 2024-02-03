@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Ignacio",
+    "Email": "a",
+    "Password": "a",
+    "RegistrationDate": "2023-12-16T01:14:32.5976736+01:00",
+    "IdNumber": 100
+  },
+  {
+    "Name": "Carlos",
+    "Email": "b",
+    "Password": "b",
+    "RegistrationDate": "2023-12-17T01:14:32.5976736+01:00",
+    "IdNumber": 101
+  },
+  {
+    "Name": "papa",
+    "Email": "papa@papa.com",
+    "Password": "papa1",
+    "RegistrationDate": "2024-02-03T00:00:00+01:00",
+    "IdNumber": 102
+  }
+]

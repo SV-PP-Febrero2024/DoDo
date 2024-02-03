@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DoDo.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DoDo.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoDo.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DoDo.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DoDo.Domain/DoDo.Domain.csproj",
+      "msbuildProject": "../DoDo.Domain/DoDo.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DoDo.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\S2-PC00\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\S2-PC00\\Desktop\\PP1-DesarrolloServidor\\DoDo\\DoDo.Domain\\DoDo.Domain.csproj": {
+              "projectPath": "C:\\Users\\S2-PC00\\Desktop\\PP1-DesarrolloServidor\\DoDo\\DoDo.Domain\\DoDo.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

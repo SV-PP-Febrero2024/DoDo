@@ -1,4 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Spectre.Console" Version="0.48.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DoDo.Domain\DoDo.Domain.csproj" />
+    <ProjectReference Include="..\DoDo.Service\DoDo.Service.csproj" />
+  </ItemGroup>
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>

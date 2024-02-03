@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DoDo.Data/1.0.0": {
+        "dependencies": {
+          "DoDo.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DoDo.Data.dll": {}
+        }
+      },
+      "DoDo.Domain/1.0.0": {
+        "runtime": {
+          "DoDo.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DoDo.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DoDo.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoDo.Domain", "DoDo.Domain\DoDo.Domain.csproj", "{2AFA7458-104C-4E2F-95E1-089223B591B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoDo.Service", "DoDo.Service\DoDo.Service.csproj", "{9D701BCB-12BE-4CB6-ACB6-7109A32DB388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoDo.Presentation", "DoDo.Presentation\DoDo.Presentation.csproj", "{5A79EA88-6D00-4348-95D9-B18C9D70C919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoDo.Data", "DoDo.Data\DoDo.Data.csproj", "{332288CB-941C-4868-8CCF-685528D9BB4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AFA7458-104C-4E2F-95E1-089223B591B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AFA7458-104C-4E2F-95E1-089223B591B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AFA7458-104C-4E2F-95E1-089223B591B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AFA7458-104C-4E2F-95E1-089223B591B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D701BCB-12BE-4CB6-ACB6-7109A32DB388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D701BCB-12BE-4CB6-ACB6-7109A32DB388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D701BCB-12BE-4CB6-ACB6-7109A32DB388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D701BCB-12BE-4CB6-ACB6-7109A32DB388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A79EA88-6D00-4348-95D9-B18C9D70C919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A79EA88-6D00-4348-95D9-B18C9D70C919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A79EA88-6D00-4348-95D9-B18C9D70C919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A79EA88-6D00-4348-95D9-B18C9D70C919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332288CB-941C-4868-8CCF-685528D9BB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332288CB-941C-4868-8CCF-685528D9BB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332288CB-941C-4868-8CCF-685528D9BB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332288CB-941C-4868-8CCF-685528D9BB4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
